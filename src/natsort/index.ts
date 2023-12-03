@@ -9,9 +9,7 @@ const base_collator = new Intl.Collator(undefined, {
  *
  * This ignores case, so won't sort "A" from "a"
  */
-const natsort = base_collator.compare;
-export default natsort;
-
+export const natsort = base_collator.compare;
 
 const case_collator = new Intl.Collator(undefined, {
   usage: "sort",

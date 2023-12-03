@@ -1,4 +1,4 @@
-class Profiler {
+export class Profiler {
   logger = console.log;
   enabled = false;
 
@@ -37,5 +37,3 @@ class Profiler {
     return tock.bind(this);
   }
 }
-
-export default Profiler;

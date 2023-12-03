@@ -13,6 +13,12 @@
     "isolatedModules": true,
     "noEmit": true,
 
+    /* Typings */
+    // "declaration": true,
+    // "declarationDir": "./dist/types",
+    // "declarationMap": true,
+    // "emitDeclarationOnly": true,
+
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
