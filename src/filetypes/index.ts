@@ -1,4 +1,4 @@
-const enum FileType {
+enum FileType {
   IMAGE,
   TDFILE,
   COMPRESSSED,
@@ -55,6 +55,11 @@ Object.keys(type_to_ext).forEach((t) => {
   });
 });
 
+export interface ExtType {
+  type: FileType;
+  ext: string;
+}
+
 /**
  * Pass an object with an `ext` field and return a FileType.
  *
@@ -95,7 +100,10 @@ export const getExtAndType = (filepath: string): ExtType => {
  * @param filepath
  * @param callbacks
  */
-export const filetypeCallback = (filepath: string, callbacks: (() => void)[]) => {
+export const filetypeCallback = (
+  filepath: string,
+  callbacks: (() => void)[]
+) => {
   const i = getExtAndType(filepath);
   const cb = callbacks[i.type];
   if (cb) cb();
