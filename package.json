@@ -1,7 +1,7 @@
 {
   "name": "@playableprints/utils",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/utils.js",
   "types": "dist/utils.d.ts",
@@ -21,5 +21,10 @@
   },
   "dependencies": {
     "is-node-process": "^1.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/playableprints/ppl-utils"
+  },
+  "homepage": "https://github.com/playableprints/ppl-utils"
 }
